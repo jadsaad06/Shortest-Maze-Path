@@ -2,6 +2,7 @@
     "files.associations": {
         "vector": "cpp",
         "cmath": "cpp",
-        "ctime": "cpp"
+        "ctime": "cpp",
+        "*.tcc": "cpp"
     }
 }
