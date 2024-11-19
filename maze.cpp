@@ -23,7 +23,7 @@ int main(){
         vector<int> availableNodes(size);
 
         int start = sqrt(size) - 1;
-        int end = size - start;
+        int end = size - start - 1;
 
         availableNodes.push_back(start);
         BFS(mazeAdj, visited, parent, availableNodes);
@@ -82,7 +82,7 @@ vector<vector<int>> genMaze() {
         for (int j = 0; j < 25; j++) {
             if (i != j) { // Skip self-loop
 
-                if (i / 5 == j / 5 && abs(i - j) == 1) { //horizontal adjacent
+                if (i / 5 == j / 5 && abs(i - j) == 1) { //horizontal
                     int random = rand() % 2;
                     maze[i][j] = random;
                     maze[j][i] = random;
